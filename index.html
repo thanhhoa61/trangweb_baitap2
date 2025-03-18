@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+    <link rel="stylesheet" href="./style.css" />
+    <!-- <link rel="stylesheet" href="./truyxuat.css" /> -->
+  </head>
+  <body>
+    <div class="container">
+      <div class="paragraph toi-paragraph">
+        <button class="toggle">toggle</button>
+        <div id="tieude1">JavaScript</div>
+        <div class="tieude2">DOM là gì</div>
+        <div id="demo">
+          <p class="text">
+            &#8227;&#160;&#160;<b>DOM</b> là tên gọi viết tắt của
+            (<strong>D</strong>ocument <strong>O</strong>bject
+            <strong>M</strong>odel &#8211; tạm dịch Mô hình Các Đối tượng Tài
+            liệu).
+          </p>
+          <p class="text">
+            &#8227;&#160;&#160;<b>DOM</b> được dùng để truy xuất và thao tác
+            trên các tài liệu có cấu trúc dạng HTML hay XML bằng các ngôn ngữ
+            lập trình thông dụng như Javascript, PHP…
+          </p>
+        </div>
+        <div id="new"></div>
+        <div class="hinh">
+          <img src="./hinh/dom1.png" alt="dom" id="img-dom" />
+        </div>
+        <div class="tieude2" id="canxoa">Một số trang</div>
+        <div class="tieude2" id="canthay">Một số trang cần tham khảo</div>
+        <div id="web">
+          <a
+            href="https://codelearn.io/"
+            target="_blank"
+            id="codelearn"
+            class="menu"
+            >Codelearn</a
+          >
+          <a
+            href="https://www.w3schools.com/"
+            target="_blank"
+            id="w3schools"
+            class="menu"
+            >w3schools</a
+          >
+          <a href="https://topdev.vn/" target="_blank" id="topdev" class="menu"
+            >Topdev</a
+          >
+        </div>
+        <br />
+        <div>
+          <details>
+            <summary class="tieude2">Các thao tác với DOM</summary>
+            <p class="thaotac-dom">&#9755;&#160;Truy xuất phần tử</p>
+            <p class="thaotac-dom">&#9755;&#160;Cập nhật phần tử</p>
+            <p class="thaotac-dom">&#9755;&#160;Thêm mới phần tử</p>
+            <p class="thaotac-dom">&#9755;&#160;Xóa phần tử</p>
+            <p class="thaotac-dom">&#9755;&#160;Thay thế phần tử</p>
+          </details>
+          <br />
+        </div>
+        <br />
+        <hr />
+        <br />
+        <div>
+          <form action="">
+            <label for="">Số 1&emsp;</label
+            ><input type="number" name="" id="so1" style="width: 50px" />
+            <label for="">Số 2&emsp;</label
+            ><input type="number" name="" id="so2" style="width: 50px" />
+            <button type="button" onclick="functionCong()" class="btn btn-1">
+              Tính
+            </button>
+            <br />
+            <label for="">Kết quả:&emsp;</label>
+            <label for="" id="ketqua"></label>
+          </form>
+        </div>
+        <br />
+        <hr />
+        <br />
+        <button id="btn" class="btn btn-2">Click me!</button>
+        <br />
+        <br />
+        <hr />
+        <div>
+          <section class="section-title">
+            <button class="btn btn-3" onclick="showUser()" id="show">
+              User
+            </button>
+          </section>
+          <section class="section-user">
+            <div class="user">
+              <div class="username">Hoàng</div>
+              <div class="avatar">
+                <img src="./hinh/user1.png" alt="" />
+              </div>
+            </div>
+            <div class="user">
+              <div class="username">Hoàng</div>
+              <div class="avatar">
+                <img src="./hinh/user2.png" alt="" />
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
